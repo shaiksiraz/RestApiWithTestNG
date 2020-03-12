@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="/Users/sirajshaik/Documents/Siraj/Selenium/Projects/RestAssuredWithTestNG">
+        <classes>
+            <class name="RestApiTests.TC001_GetRequest">
+                <methods>
+                    <include name="getWeatherDetails"/>
+                </methods>
+            </class>
+            <class name="RestApiTests.TC002_PostRequest">
+                <methods>
+                    <include name="postRequest"/>
+                </methods>
+            </class>
+            <class name="RestApiTests.TC003_GoogleMapGetResponse">
+                <methods>
+                    <include name="verifyResponseOfGoogleMap"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
